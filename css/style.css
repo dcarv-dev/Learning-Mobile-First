@@ -16,6 +16,40 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+header {
+  background-color: rgba(255, 255, 255, 0.774);
+}
+i#burger {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+i#burger:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  transition: 0.5s;
+}
+menu#itens {
+  display: none;
+}
+menu ul li {
+  list-style-type: none;
+}
+menu ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-top: 2px solid black;
+}
+menu ul li a:hover {
+  color: black;
+  text-shadow: 1px 1px 1px white;
+  transition: 0.5s;
+}
 main div.content {
   background-color: rgba(255, 255, 255, 0.774);
   width: 90vw;

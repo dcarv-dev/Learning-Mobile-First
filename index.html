@@ -6,43 +6,74 @@
     <title>Media Queries</title>
     <link rel="stylesheet" href="css/style.css" media="all" />
     <link rel="stylesheet" href="css/media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
+    <header>
+      <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+      <menu id="itens">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mobile First</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Portfólio</a></li>
+          <li><a href="#">Networking</a></li>
+        </ul>
+      </menu>
+    </header>
     <main>
-        <div class="content">
-            <h1>Testando Media Queries</h1>
-            <img
-              class="platform"
-              id="desktop"
-              src="pacote-imagens-cap25/imagens/icon-pc.png"
-              alt="Acessando pelo PC"
-            /><img
-              class="platform"
-              id="smartphone"
-              src="pacote-imagens-cap25/imagens/icon-phone.png"
-              alt="Acessando pelo smartphone"
-            /><img
-              class="platform"
-              id="printer"
-              src="pacote-imagens-cap25/imagens/icon-print.png"
-              alt="Versão de impressora"
-            /><img
-              class="platform"
-              id="tablet"
-              src="pacote-imagens-cap25/imagens/icon-tablet.png"
-              alt="Acessando pelo tablet"
-            /><img
-              class="platform"
-              id="tv"
-              src="pacote-imagens-cap25/imagens/icon-tv.png"
-              alt="Acessando pela TV"
-            />
-        </div>
-        <div class="content">
-            <p>
-                <strong>Media Queries</strong> são importantes aliadas para construir sites responsivos com uma boa UX. Elas permitem adaptar o conteúdo de uma página de acordo com as propriedades do dispositivo que está a acessando. Neste site, você notará que em cada dispositivo há um papel de parede diferente, e outras diferenças, para que a experiência do usuário seja satisfatória tanto num <strong>smartphone</strong> quanto em uma grande <strong>televisão</strong>.
-            </p>
-        </div>
+      <div class="content">
+        <h1>Testando Media Queries</h1>
+        <img
+          class="platform"
+          id="desktop"
+          src="pacote-imagens-cap25/imagens/icon-pc.png"
+          alt="Acessando pelo PC"
+        /><img
+          class="platform"
+          id="smartphone"
+          src="pacote-imagens-cap25/imagens/icon-phone.png"
+          alt="Acessando pelo smartphone"
+        /><img
+          class="platform"
+          id="printer"
+          src="pacote-imagens-cap25/imagens/icon-print.png"
+          alt="Versão de impressora"
+        /><img
+          class="platform"
+          id="tablet"
+          src="pacote-imagens-cap25/imagens/icon-tablet.png"
+          alt="Acessando pelo tablet"
+        /><img
+          class="platform"
+          id="tv"
+          src="pacote-imagens-cap25/imagens/icon-tv.png"
+          alt="Acessando pela TV"
+        />
+      </div>
+      <div class="content">
+        <p>
+          <strong>Media Queries</strong> são importantes aliadas para construir
+          sites responsivos com uma boa UX. Elas permitem adaptar o conteúdo de
+          uma página de acordo com as propriedades do dispositivo que está a
+          acessando. Neste site, você notará que em cada dispositivo há um papel
+          de parede próprio além de outras diferenças, para que a experiência do
+          usuário seja satisfatória tanto num <strong>smartphone</strong> quanto
+          em uma grande <strong>televisão</strong>.
+        </p>
+      </div>
     </main>
+    <script>
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
